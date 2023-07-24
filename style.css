@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+}
+body {
+    background-color: white;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+}
+a:link,
+a:visited {
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover,
+a:active {
+    text-decoration: none;
+    text-align: center;
+
+}
+.wrapper {
+    height: 100%;
+    border: 2px solid red;
+    width: 70%;
+    margin: 0 auto ;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* background-color: yellow; */
+    /* background-image: linear-gradient(to right, gold,white, green); */
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+
+    border: 3px solid greenyellow;
+}
+
+.logostyle {
+    float: left;
+    height: 65px;
+    width: 65px;
+    padding: 0;
+    align-items: center;
+    /* display: flex; */
+    border: 3px solid blue;
+    position: relative;
+}
+
+#logo {
+    height: 55px;
+    width: 55px;
+}
+
+.logostyle .tt_logo {
+    /* display: none; */
+    visibility: hidden;
+    background-color: gold;
+    color: black;
+    font: 12px sans-serif;
+    z-index: 1;
+    padding: 5px;
+    width: 120px;
+    /* white-space: nowrap; */
+    border: 0.25px solid black;
+    position: absolute;
+    text-align: center;
+    
+    bottom: -30px;
+    right:-50%;
+    
+    /* following(top,left,margin-left) is used to position tooltip at bottom center */
+    /* top: 100%;
+    left:50%;
+    margin-left: -60px; */
+    
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.logostyle .tt_logo::after{
+    content: "";
+    position: absolute;
+    bottom:100%;
+    left: 50%;
+    margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent ;
+
+}
+
+.logostyle:hover .tt_logo {
+    /* display: block; */
+    visibility:;
+    opacity: 1;
+
+}
+
+.company_txt {
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+    height: 70px;
+    width: 105px;
+    text-shadow: 2px 2px 4px white;
+    float: left;
+
+
+}
+
+.headerlinks {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.searchbox {
+    float: right;
+    clear:right;
+    /* margin: -3px; */
+
+}
+
+#search{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left:20px;
+    background-image: url('./img/searchicon.png');
+    background-position: 7px 7px;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    height: 25px;
+}
+
+input:focus {
+    background-color: rgb(235, 230, 230);
+}
+
+.navbar {
+    position: sticky;
+    top:0;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #38444d;
+    border-bottom: 0.5px solid rgb(255, 253, 253);
+    float:left;
+}
+
+
+#home-icon {
+    height: 22px;
+     vertical-align: middle;
+}
+
+.submenu1 {
+    display: none;
+    background-color: rgb(158, 152, 152);
+    overflow: hidden;
+    position:absolute;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* z-index: 1; */
+}
+
+
+.submenu1 a {
+    display: block;
+    color: #f1f1f1;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.menu li a:visited, .menu li a:active, .menu li a:link{
+    color: white;
+}
+.menu li a:hover,
+.cat_menu:hover .dropbtn {
+    background-color: red;
+    color: white;
+}
+
+.submenu1 a:hover {
+    background-color: #f1f1f1;
+}
+
+.cat_menu:hover .submenu1 {
+    display: block;
+}
+
+li.cat_menu {
+    display: inline-block;
+}
+
+.menu {
+    overflow:hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* width:fit-content; */
+    /* height:fit-content; */
+    /* display: block; */
+}
+
+.menu li,
+.dropbtn {
+    display: inline;
+    color: white;
+    /* text-align: center; */
+    text-decoration: none;
+    /* border: 1px solid gold; */
+
+}
+
+.imgbar {
+    width: 100%;
+    max-height: 200px;
+    margin: auto;
+    border-bottom: 0.5px solid black;
+    overflow: hidden;
+}
+
+.imgscroller {
+    display: inline-block;
+    border: 1px solid;
+
+
+}
+
+#imgscroller-pic {
+    height: 450px;
+    width: 333px;
+}
+
+.content_area {
+    border: 1px solid;
+    margin: auto;
+    width: 100%;
+    /* display: flex; */
+
+}
+
+.content-area-important {
+    float: right;
+    height: inherit;
+    /* width: 20%; */
+    border: 0.5px solid gold;
+    margin: 5px;
+    /* padding: 8px; */
+    /* border: 0.5px solid grey; */
+
+}
+
+.content-area-important li {
+    display: block;
+}
+
+.imp-header {
+    background-color: rgb(92, 92, 255);
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+#content_pic {
+    height: 150px;
+    width: 260px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.content {
+    /* float:left; */
+    display: inline-block;
+    max-width: 300px;
+    /* width:290px; */
+    height: 380px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px;
+    border: 0.5px solid lightgrey;
+    /* border-block: 4px inset; */
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    text-align:center;
+    border-top: 10px solid lightgrey;
+    /* clear: right; */
+    vertical-align: top;
+    /* align-items: stretch; */
+    box-shadow: 0px 0px 5px 5px rgb(253, 197, 160);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+
+}
+.content p{
+    width: 260px;
+    margin: 0 10px;
+    /* text-align:justify; */
+
+}
+
+.content:hover {
+    border-top: 10px solid #38444d;
+    background-color: rgb(235, 233, 233);
+    /* width: 800px; */
+}
+
+.content a {
+    color: blue;
+    background-color: transparent;
+    padding: 0;
+}
+
+.content a:hover {
+    text-decoration: underline;
+
+}
+
+#bluebox {
+    background: url("./img/pexels-miguel-á-padriñán-255379.jpg");
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    padding: 5px;
+    height: 260px;
+    width: 450px;
+    margin: auto;
+    border-radius: 60px;
+    box-shadow: 0px 0px 5px 5px rgb(253, 197, 160);
+    opacity: 0.5;
+}
+
+#bluebox:hover {
+    opacity: unset;
+}
+
+.bluebox_p1 {
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.bluebox_p2 {
+    font-size: 20px;
+    padding: 5px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+#bluebox_p2{
+    visibility:hidden;
+}
+
+.btn_close{
+    right:40px;
+    position: absolute;
+}
+
+.close{
+    font-size: 26px;
+}
+
+.close:hover{
+    color:red;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.btnstyle {
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    opacity: 1;
+    transition-duration: 0.2s;
+    box-shadow: 0px 0px 25px 0px rgba(5,0,0,0.5);
+
+}
+
+.btn_dnld{
+    background-color: yellow;
+    color: black; 
+    border:none;
+}
+
+.btnstyle:hover {
+      opacity: 0.7;
+      /* background-color: green; */
+
+ }
+
+#developer {
+    float: right;
+    width: 100%;
+    height: 50%;
+    background-color: #38444d;
+}
+
+#developer a {
+    padding-right: 5px;
+    margin: 0;
+    padding-left: 0;
+    background-color: #38444d;
+
+
+}
+
+p#developer_txt {
+    font-size: 12px;
+    text-align: right;
+    font-style: oblique;
+    padding-right: 10px;
+    color: white;
+    opacity: 0.5;
+
+}
+
+p#developer_txt>a:hover{
+    opacity: 1;
+    /* color: white; */
+
+}
+
+#footer {
+    height: 80px;
+    width: 100%;
+    border-top: 0.5px solid lightgrey;
+
+}
+
+#footer_links {
+    float: left;
+    font-size: 15px;
+    padding-left: 15px;
+    margin-bottom: 8px;
+    color: white;
+
+}
+
+#footer a {
+    background-color: #38444d;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+
+#footer a:hover {
+    opacity: 1;
+
+}
+
+.nav {
+    background-color: #38444d;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 0px;
+}
+
+.content_area::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ 
+
+@media screen and (max-width:600px) {
+    .content {
+      width: 100%;
+    }
+    .content-area-important {
+        width: 100%;
+    }
+    .menu li{
+        display:list-item;
+        border: 0.5px solid white;
+        width: 100%;
+    }
+    .navbar{
+        position: relative;
+        height:fit-content;
+        width: 100%;
+    }
+    a:hover,
+    a:active,a:link,
+    a:visited  {
+        width: 100%;
+        text-align: center;
+    }
+
+
+}

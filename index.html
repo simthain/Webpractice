@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      
+      var box = document.getElementsByClassName('bluebox');
+      var span = document.getElementsByClassName("close")[0];
+      
+      span.onclick = function() { 
+        box.style.display = "none";
+        // box.style.opacity=0;
+      }
+      </script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="logostyle">
+          <img src="./img/logo.png" alt="logo image" id="logo" />
+          <span class="tt_logo">NOWTECH IT LTD.</span>
+        </div>
+        
+        <!-- <svg width="500" height="200">
+          <mask id="svgmask1">
+            <polygon fill="#ffffff" points="200 0, 400 400, 0 400"></polygon>
+          </mask>
+          <image href="./img/content_top2.jpg" mask="url(#svgmask1)"></image>
+        </svg> -->
+
+        <div class="company_txt" title="NOWTECH IT LTD.">NOWTECH IT LTD.</div>
+        <div class="headerlinks">
+          <a href="signup.html">Login</a>
+          <a href="signup.html">Signup</a>
+        </div>
+        <div class="searchbox">
+          <input
+            type="search"
+            placeholder="Search"
+            id="search"
+            autocomplete="off"
+          
+          />
+        </div>
+      </div>
+
+      <div class="navbar">
+        <ul class="menu">
+          <li class="home_menu">
+            <a href="index.html" target="_self">
+              <img src="./img/home_icon.png" alt="Home" id="home-icon" />
+              Home
+            </a>
+          </li>
+          <li class="cat_menu">
+            <a href="javascript:void(0)" class="dropbtn">Categories</a>
+            <div class="submenu1">
+              <a href="">Test11</a>
+              <a href="">Test12</a>
+            </div>
+          </li>
+          <li class="port_menu">
+            <a href="javascript:void(0)" class="">Portfolio</a>
+            <div class="submenu1">
+              <a href="index.html" target="_self">Test21</a>
+              <a href="index.html" target="_self">Test22</a>
+            </div>
+          </li>
+          <li class="ser_menu">
+            <a href="" target="_parent">Services</a>
+            <div class="submenu1">
+              <a href="" target="_parent">Test31</a>
+              <a href="index.html" target="_self">Test32</a>
+            </div>
+          </li>
+          <li class="pri_menu">
+            <a href="" target="_blank">Pricing</a>
+            <div class="submenu1">
+              <a href="index.html" target="_self">Test41</a>
+              <a href="index.html" target="_self">Test42</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="imgbar">
+        <div class="imgscroller">
+          <img src="./img/img-scroller/1.avif" id="imgscroller-pic" />
+          <img src="./img/img-scroller/2.avif" id="imgscroller-pic" />
+          <img src="./img/img-scroller/3.avif" id="imgscroller-pic" />
+          <img src="./img/img-scroller/4.avif" id="imgscroller-pic" />
+          <img src="./img/img-scroller/5.avif" id="imgscroller-pic" />
+          <img src="./img/img-scroller/6.avif" id="imgscroller-pic" />
+          <img src="./img/img-scroller/7.avif" id="imgscroller-pic" />
+          <img src="./img/img-scroller/8.avif" id="imgscroller-pic" />
+        </div>
+      </div>
+
+      <div class="content_area">
+        <div class="content-area-important">
+          <div class="imp-header">
+            <h3>Highlights</h3>
+          </div>
+          <ul>
+            <li><a href="">hello1</a></li>
+            <li><a href="">hello1</a></li>
+            <li><a href="">hello1</a></li>
+            <li><a href="">hello1</a></li>
+            <li><a href="">hello1</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="content_top">
+            <img src="./img/content_top1.jpg" id="content_pic" />
+          </div>
+          <h3>Networking</h3>
+          <p>
+            Lorem ipsumcc q nostrum mollitia atque veniam quisquam. Consequatur
+            animi dignissimos a eius autem, praesentium ut inventore beatae
+            possimus. In consequuntur iste dicta <a href="">see more..</a>.
+          </p>
+        </div>
+
+        <div class="content">
+          <div class="content_top">
+            <img src="./img/content_top2.jpg" id="content_pic" />
+          </div>
+          <h3>Appreciation</h3>
+          <p>
+            Lorem ipsum ligendi facilis quod distinctio non fuga molestias
+            ducimus laud a eius autem, praesentium ut inventore beatae possimus.
+            In consequuntur iste dicta <a href="">see more..</a>.
+          </p>
+        </div>
+
+        <div class="content">
+          <div class="content_top">
+            <img src="./img/content_top3.jpg" id="content_pic" />
+          </div>
+          <h3>Projects</h3>
+          <p>
+            Loremumque ut, quaerat quis illo eligendi facilis quod distinctio
+            non fuga moledolorem nimos a eius autem, praesentium ut inventore
+            beatae possimus. In consequuntur iste dicta
+            <a href="">see more..</a>.
+          </p>
+        </div>
+
+        <div class="content">
+          <div class="content_top">
+            <img src="./img/content_top4.jpg" id="content_pic" />
+          </div>
+          <h3>Social Media</h3>
+          <p>
+            Lorem ipsuAcc illo eligendi facilis quod distinctio non fuga
+            molestias duci dignissimos a eius autem, praesentium ut inventore
+            beatae possimus. In consequuntur iste dicta <a href="">see more</a>.
+          </p>
+        </div>
+
+        <div class="content">
+          <div class="content_top">
+            <img src="./img/content_top5.jpg" id="content_pic" />
+          </div>
+          <h3>Reports</h3>
+          <p>
+            Lorem ipsuAcs illo eligendi facilis quod distinctio non fuga
+            molestias lorem noos a eius autem, praesentium ut inventore beatae
+            possimus. In consequuntur iste dicta <a href="">see more..</a>.
+          </p>
+        </div>
+      </div>
+
+      <div id="bluebox">
+        <div class="btn_close" onclick="cls()">
+          <!-- <a href=""><strong>x</strong></a> -->
+          <span class="close" >&times;</span>
+        </div>
+        <div class="bluebox_p1">Hello Everyone!!</div>
+        <div id="bluebox_p2">
+          Lorem ipsum, dolor sitisicing elit. Harum iusto unde quibusdam
+          eligendi quasi exolor sit amet consectetur adipisicing elit. Nihil
+          cupiditate as illum.
+        </div>
+        <button class="btnstyle btn_dnld" onclick="myFunction()"> Download</button>
+      </div>
+      <div id="footer">
+        <div class="nav">
+          <ul>
+            <li><a href="./privacy.html">Privacy</a></li>
+            <li><a href="#clients">Our Clients</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contact">Sitemap</a></li>
+          </ul>
+        </div>
+        <div id="developer">
+          <p id="developer_txt">
+            Developed by: <a href="mailto:simthain@gmail.com">Simran Thapar</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        document.getElementById("bluebox_p2").style.visibility = "visible";
+      }
+      function cls(){
+        document.getElementById("bluebox").style.display="none";
+      }
+      </script>
+  </body>
+</html>
