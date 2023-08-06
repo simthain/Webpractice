@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
     <link rel="stylesheet" href="./style.css" />
-    <script>
+    <!-- <script>
       
       var box = document.getElementsByClassName('bluebox');
       var span = document.getElementsByClassName("close")[0];
@@ -18,204 +28,301 @@
         box.style.display = "none";
         // box.style.opacity=0;
       }
-      </script>
-    <title>Document</title>
+      </script> -->
+    <title>NowTech IT Ltd.</title>
   </head>
 
   <body>
-    <div class="wrapper">
+    <div class="main">
       <div class="header">
-        <div class="logostyle">
-          <img src="./img/logo.png" alt="logo image" id="logo" />
-          <span class="tt_logo">NOWTECH IT LTD.</span>
-        </div>
-        
-        <!-- <svg width="500" height="200">
-          <mask id="svgmask1">
-            <polygon fill="#ffffff" points="200 0, 400 400, 0 400"></polygon>
-          </mask>
-          <image href="./img/content_top2.jpg" mask="url(#svgmask1)"></image>
-        </svg> -->
+        <div class="header-content">
+          <div class="logostyle">
+            <img src="./img/logo.png" alt="logo image" id="logo" />
+            <span class="tt_logo">NOWTECH IT LTD.</span>
+          </div>
 
-        <div class="company_txt" title="NOWTECH IT LTD.">NOWTECH IT LTD.</div>
-        <div class="headerlinks">
-          <a href="signup.html">Login</a>
-          <a href="signup.html">Signup</a>
+          <!-- <svg width="500" height="200">
+            <mask id="svgmask1">
+              <polygon fill="#ffffff" points="200 0, 400 400, 0 400"></polygon>
+            </mask>
+            <image href="./img/content_top2.jpg" mask="url(#svgmask1)"></image>
+          </svg> -->
+
+          <div class="company_txt" title="NOWTECH IT LTD.">
+            NOWTECH <br />IT LTD.
+          </div>
+          <div class="searchbox">
+            <input
+              type="search"
+              placeholder="Search"
+              id="search"
+              autocomplete="off"
+            />
+          </div>
+          <div class="headerlinks">
+            <a href="signup.html"
+              ><span
+                class="material-symbols-outlined"
+                id="home-icon"
+                style="font-size: 17px"
+                title="Login"
+                >login</span
+              >
+              Login</a
+            >
+          </div>
         </div>
-        <div class="searchbox">
-          <input
-            type="search"
-            placeholder="Search"
-            id="search"
-            autocomplete="off"
-          
-          />
-        </div>
+      </div>
+      <div class="mobile-menu" onclick="fade()">
+        <h5 style="color: white">Menu</h5>
+        <span
+          class="material-symbols-outlined"
+          id="home-icon"
+          style="font-size: 34px; color: white"
+          >menu</span
+        >
       </div>
 
       <div class="navbar">
-        <ul class="menu">
-          <li class="home_menu">
-            <a href="index.html" target="_self">
-              <img src="./img/home_icon.png" alt="Home" id="home-icon" />
-              Home
-            </a>
-          </li>
-          <li class="cat_menu">
-            <a href="javascript:void(0)" class="dropbtn">Categories</a>
-            <div class="submenu1">
-              <a href="">Test11</a>
-              <a href="">Test12</a>
-            </div>
-          </li>
-          <li class="port_menu">
-            <a href="javascript:void(0)" class="">Portfolio</a>
-            <div class="submenu1">
-              <a href="index.html" target="_self">Test21</a>
-              <a href="index.html" target="_self">Test22</a>
-            </div>
-          </li>
-          <li class="ser_menu">
-            <a href="" target="_parent">Services</a>
-            <div class="submenu1">
-              <a href="" target="_parent">Test31</a>
-              <a href="index.html" target="_self">Test32</a>
-            </div>
-          </li>
-          <li class="pri_menu">
-            <a href="" target="_blank">Pricing</a>
-            <div class="submenu1">
-              <a href="index.html" target="_self">Test41</a>
-              <a href="index.html" target="_self">Test42</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <div id="menubar">
+          <ul class="menu">
+            <li class="home_menu">
+              <a href="./index.html" target="_self" id="homemenu">
+                <!-- <img src="./img/home_icon.png" alt="Home" id="home-icon" /> -->
+                <span
+                  class="material-symbols-outlined"
+                  id="home-icon"
+                  style="font-size: 19px"
+                  >home</span
+                >
 
-      <div class="imgbar">
-        <div class="imgscroller">
-          <img src="./img/img-scroller/1.avif" id="imgscroller-pic" />
-          <img src="./img/img-scroller/2.avif" id="imgscroller-pic" />
-          <img src="./img/img-scroller/3.avif" id="imgscroller-pic" />
-          <img src="./img/img-scroller/4.avif" id="imgscroller-pic" />
-          <img src="./img/img-scroller/5.avif" id="imgscroller-pic" />
-          <img src="./img/img-scroller/6.avif" id="imgscroller-pic" />
-          <img src="./img/img-scroller/7.avif" id="imgscroller-pic" />
-          <img src="./img/img-scroller/8.avif" id="imgscroller-pic" />
-        </div>
-      </div>
-
-      <div class="content_area">
-        <div class="content-area-important">
-          <div class="imp-header">
-            <h3>Highlights</h3>
-          </div>
-          <ul>
-            <li><a href="">hello1</a></li>
-            <li><a href="">hello1</a></li>
-            <li><a href="">hello1</a></li>
-            <li><a href="">hello1</a></li>
-            <li><a href="">hello1</a></li>
+                Home
+              </a>
+            </li>
+            <li class="cat_menu">
+              <a href="javascript:void(0)" class="">Categories</a>
+              <div class="submenu1">
+                <a href="">Test11</a>
+                <a href="">Test12</a>
+              </div>
+            </li>
+            <li class="port_menu">
+              <a href="javascript:void(0)" class="">Portfolio</a>
+              <div class="submenu1">
+                <a href="index.html" target="_self">Test21</a>
+                <a href="index.html" target="_self">Test22</a>
+              </div>
+            </li>
+            <li class="ser_menu">
+              <a href="javascript:void(0)">Services</a>
+              <div class="submenu1">
+                <a href="" target="_parent">Test31</a>
+                <a href="index.html" target="_self">Test32</a>
+              </div>
+            </li>
+            <li class="pri_menu">
+              <a href="javascript:void(0)">Pricing</a>
+              <div class="submenu1">
+                <a href="index.html" target="_self">Test41</a>
+                <a href="index.html" target="_self">Test42</a>
+              </div>
+            </li>
+            <li class="priv_menu">
+              <a href="./privacy.html" id="privmenu">Privacy</a>
+              
+            </li>
           </ul>
         </div>
-        <div class="content">
-          <div class="content_top">
-            <img src="./img/content_top1.jpg" id="content_pic" />
-          </div>
-          <h3>Networking</h3>
-          <p>
-            Lorem ipsumcc q nostrum mollitia atque veniam quisquam. Consequatur
-            animi dignissimos a eius autem, praesentium ut inventore beatae
-            possimus. In consequuntur iste dicta <a href="">see more..</a>.
-          </p>
-        </div>
-
-        <div class="content">
-          <div class="content_top">
-            <img src="./img/content_top2.jpg" id="content_pic" />
-          </div>
-          <h3>Appreciation</h3>
-          <p>
-            Lorem ipsum ligendi facilis quod distinctio non fuga molestias
-            ducimus laud a eius autem, praesentium ut inventore beatae possimus.
-            In consequuntur iste dicta <a href="">see more..</a>.
-          </p>
-        </div>
-
-        <div class="content">
-          <div class="content_top">
-            <img src="./img/content_top3.jpg" id="content_pic" />
-          </div>
-          <h3>Projects</h3>
-          <p>
-            Loremumque ut, quaerat quis illo eligendi facilis quod distinctio
-            non fuga moledolorem nimos a eius autem, praesentium ut inventore
-            beatae possimus. In consequuntur iste dicta
-            <a href="">see more..</a>.
-          </p>
-        </div>
-
-        <div class="content">
-          <div class="content_top">
-            <img src="./img/content_top4.jpg" id="content_pic" />
-          </div>
-          <h3>Social Media</h3>
-          <p>
-            Lorem ipsuAcc illo eligendi facilis quod distinctio non fuga
-            molestias duci dignissimos a eius autem, praesentium ut inventore
-            beatae possimus. In consequuntur iste dicta <a href="">see more</a>.
-          </p>
-        </div>
-
-        <div class="content">
-          <div class="content_top">
-            <img src="./img/content_top5.jpg" id="content_pic" />
-          </div>
-          <h3>Reports</h3>
-          <p>
-            Lorem ipsuAcs illo eligendi facilis quod distinctio non fuga
-            molestias lorem noos a eius autem, praesentium ut inventore beatae
-            possimus. In consequuntur iste dicta <a href="">see more..</a>.
-          </p>
-        </div>
       </div>
+      <div class="wrapper">
+        <div class="imgbar">
+          <div class="imgscroller" style="height: 500px">
+            <img src="./img/img-scroller/1.avif" id="imgscroller-pic" />
+            <img src="./img/img-scroller/2.avif" id="imgscroller-pic" />
+            <img src="./img/img-scroller/3.avif" id="imgscroller-pic" />
+            <img src="./img/img-scroller/4.avif" id="imgscroller-pic" />
+            <img src="./img/img-scroller/5.avif" id="imgscroller-pic" />
+            <img src="./img/img-scroller/6.avif" id="imgscroller-pic" />
+            <img src="./img/img-scroller/7.avif" id="imgscroller-pic" />
+            <img src="./img/img-scroller/8.avif" id="imgscroller-pic" />
+          </div>
+        </div>
 
-      <div id="bluebox">
-        <div class="btn_close" onclick="cls()">
-          <!-- <a href=""><strong>x</strong></a> -->
-          <span class="close" >&times;</span>
+        <div class="content_area">
+          <div class="content-area-important">
+            <div class="imp-header">
+              <h3>Highlights</h3>
+            </div>
+            <ul>
+              <li><a href="">hello1</a></li>
+              <li><a href="">hello1</a></li>
+              <li><a href="">hello1</a></li>
+              <li><a href="">hello1</a></li>
+              <li><a href="">hello1</a></li>
+            </ul>
+          </div>
+          <div class="content-area-cards">
+            <div class="content">
+              <div class="content_top">
+                <img src="./img/content_top1.jpg" id="content_pic" />
+              </div>
+              <div class="content-text">
+                <h3>Networking</h3>
+                <p>
+                  Lorem ipsumcc q nostrum mollitia atque veniam quisquam.
+                  Consequatur animi dignissimos a eius autem, praesentium ut
+                  inventore beatae possimus. In consequuntur iste dicta
+                  <a href="">see more..</a>.
+                </p>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="content_top">
+                <img src="./img/content_top2.jpg" id="content_pic" />
+              </div>
+              <div class="content-text">
+                <h3>Appreciation</h3>
+                <p>
+                  Lorem ipsum ligendi facilis quod distinctio non fuga molestias
+                  ducimus laud a eius autem, praesentium ut inventore beatae
+                  possimus. In consequuntur iste dicta
+                  <a href="">see more..</a>.
+                </p>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="content_top">
+                <img src="./img/content_top3.jpg" id="content_pic" />
+              </div>
+              <div class="content-text">
+                <h3>Projects</h3>
+                <p>
+                  Loremumque ut, quaerat quis illo eligendi facilis quod
+                  distinctio non fuga moledolorem nimos a eius autem,
+                  praesentium ut inventore beatae possimus. In consequuntur iste
+                  dicta
+                  <a href="">see more..</a>.
+                </p>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="content_top">
+                <img src="./img/content_top4.jpg" id="content_pic" />
+              </div>
+              <div class="content-text">
+                <h3>Social Media</h3>
+                <p>
+                  Lorem ipsuAcc illo eligendi facilis quod distinctio non fuga
+                  molestias duci dignissimos a eius autem, praesentium ut
+                  inventore beatae possimus. In consequuntur iste dicta
+                  <a href="">see more</a>.
+                </p>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="content_top">
+                <img src="./img/content_top5.jpg" id="content_pic" />
+              </div>
+              <div class="content-text">
+                <h3>Reports</h3>
+                <p>
+                  Lorem ipsuAcs illo eligendi facilis quod distinctio non fuga
+                  molestias lorem noos a eius autem, praesentium ut inventore
+                  beatae possimus. In consequuntur iste dicta
+                  <a href="">see more..</a>.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="bluebox_p1">Hello Everyone!!</div>
-        <div id="bluebox_p2">
-          Lorem ipsum, dolor sitisicing elit. Harum iusto unde quibusdam
-          eligendi quasi exolor sit amet consectetur adipisicing elit. Nihil
-          cupiditate as illum.
+
+        <div id="bluebox">
+          <div class="btn_close" onclick="cls()">
+            <!-- <a href=""><strong>x</strong></a> -->
+            <!-- <span class="close" >&times;</span> -->
+            <span
+              class="material-symbols-outlined"
+              style="color: brown; font-size: 28px"
+              >cancel</span
+            >
+            <!-- <i class="material-icons" style="color: cadetblue">cancel</i> -->
+          </div>
+          <div class="bluebox_p1">Hello Everyone!!</div>
+          <div id="bluebox_p2">
+            Lorem ipsum, dolor sitisicing elit. Harum iusto unde quibusdam
+            eligendi quasi exolor sit amet consectetur adipisicing elit. Nihil
+            cupiditate as illum.
+          </div>
+
+          <button class="btnstyle btn_dnld" onclick="myFunction()">
+            Download
+          </button>
         </div>
-        <button class="btnstyle btn_dnld" onclick="myFunction()"> Download</button>
       </div>
       <div id="footer">
-        <div class="nav">
+        <div id="nav">
           <ul>
             <li><a href="./privacy.html">Privacy</a></li>
             <li><a href="#clients">Our Clients</a></li>
-            <li><a href="#contact">Contact Us</a></li>
             <li><a href="#contact">Sitemap</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div id="developer">
-          <p id="developer_txt">
-            Developed by: <a href="mailto:simthain@gmail.com">Simran Thapar</a>
+          <p id="developer_txt">All rights reserved. Copyright &copy</p>
+          <p id="developer-email">
+            <a href="mailto:simthain@gmail.com">Simran Thapar</a>
           </p>
         </div>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       function myFunction() {
         document.getElementById("bluebox_p2").style.visibility = "visible";
       }
-      function cls(){
-        document.getElementById("bluebox").style.display="none";
+      function cls() {
+        document.getElementById("bluebox").style.display = "none";
       }
-      </script>
+
+      function mobile_nav_show() {
+        var navbar = document.querySelector(".navbar");
+        if (navbar.style.display === "block") {
+          navbar.style.display = "none";
+        } else {
+          navbar.style.display = "block";
+        }
+      }
+      function fade() {
+        var navbar = $(".navbar");
+        // Check if navbar is visible
+        if (navbar.is(":visible")) {
+          // If visible, hide it slowly
+          navbar.fadeOut("slow");
+        } else {
+          // If hidden, show it slowly
+          // navbar.fadeIn("slow");
+          navbar.fadeIn("slow");
+        }
+      }
+
+      $(document).ready(function () {
+        var currentLocation = window.location.href;
+        if (currentLocation.indexOf("index.html") !== -1) {
+          $("#homemenu").addClass("active"); // Add active class to the Home button
+        } else if (currentLocation.indexOf("privacy.html") !== -1) {
+          $("#privmenu").addClass("active"); // Add active class to the About button
+        } else if (currentLocation.indexOf("contact.html") !== -1) {
+          $("#contact").addClass("active"); // Add active class to the Contact button
+        }
+      });
+    </script>
+
+
   </body>
 </html>
